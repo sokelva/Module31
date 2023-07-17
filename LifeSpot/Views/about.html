@@ -4,26 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Static/JS/about.js"></script>
+    <link href="../Static/CSS/slider.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/jquery.flexslider-min.js"></script>
+
+    <!-- Подлкючен jQuery -->
+    <script>
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+                animation: 'fade',
+                controlsContainer: '.flexslider'
+            });
+        });
+    </script>
+
 </head>
 
 <header id="header-index">
     <h1>LifeSpot - о проекте</h1>
-    <p>На сайте собраны прямые трансляции из улиц разных городов мира.</p>
-    <p>Все трансляции находятся в открытых источниках, в данный момент - youtube.com</p>
+    <p>На сайте собраны прямые трансляции из улиц разных городов мира. </p>
+    <p>Все трансляции находятся в открытых источниках, в данный момент - youtube.com. </p>
+    <!--SLIDER-->
     <p>Отзыв о работе сайта можно оставить здесь</p>
-
 </header>
 
-<!--SIDEBAR-->
 <body>
+
+    <div class="flex-container">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="../Images/7.png" />
+                    <p>Тест Слайдера</p>
+                </li>
+                <li>
+                    <img src="../Images/8.png" />
+                    <p>Тест Слайдера</p>
+                </li>
+                <li>
+                    <img src="../Images/9.png" />
+                    <p>Тест Слайдера</p>
+                </li>
+                <li>
+                    <img src="../Images/10.png" />
+                    <p>Тест Слайдера</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="reviews">
         <div class="review-button">
             <button onclick="addComment()">Оставить отзыв</button>
         </div>
     </div>
+
+
 </body>
+
 <!--FOOTER-->
 
 </html>
